@@ -1,0 +1,10 @@
+# Cloudflare Pages Configuration
+# Dokumentasi: https://developers.cloudflare.com/pages/configuration/build-configuration/
+
+[build]
+  command = "HUGO_ENV=production hugo --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.152.2"
+  NODE_VERSION = "18"
