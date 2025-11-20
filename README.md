@@ -37,7 +37,7 @@ Blog pribadi modern yang dibangun dengan **Hugo** dan **Tailwind CSS**, di-deplo
 
 3. **Build Settings**
    - **Framework preset**: Hugo
-   - **Build command**: `hugo --minify`
+   - **Build command**: `HUGO_ENV=production hugo --minify`
    - **Build output directory**: `public`
    - **Root directory**: `/` (default)
 
@@ -70,12 +70,14 @@ Setelah deploy berhasil, Anda bisa menambahkan custom domain di Cloudflare Pages
 # Development server
 hugo server -D
 
-# Build production
-hugo --gc --minify
+# Build production (PENTING: gunakan HUGO_ENV=production)
+HUGO_ENV=production hugo --gc --minify
 
 # Build dengan drafts
 hugo --buildDrafts
 ```
+
+> **⚠️ PENTING**: Selalu gunakan `HUGO_ENV=production` saat build untuk production agar tidak ada livereload script dan URL menggunakan baseURL yang benar dari `hugo.toml`.
 
 ## 📁 Struktur
 
