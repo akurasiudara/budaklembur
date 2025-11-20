@@ -1,4 +1,4 @@
-baseURL = 'https://budaklembur.netlify.app'
+baseURL = 'https://budaklembur.pages.dev'
 languageCode = 'id'
 title = 'Budak Lembur Blog'
 theme = 'budaklembur-theme'

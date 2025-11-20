@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects
+# Redirect www to non-www (optional)
+https://www.budaklembur.com/* https://budaklembur.com/:splat 301!
+
+# Force HTTPS (handled by Cloudflare by default, but can be explicit)
+http://budaklembur.com/* https://budaklembur.com/:splat 301!
+
+# 404 fallback
+/* /404.html 404

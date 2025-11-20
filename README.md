@@ -1,6 +1,6 @@
-# 🌿 Budak Lembur - Hugo Blog
+# 🌿 Budak Lembur Blog
 
-Blog pribadi modern yang dibangun dengan **Hugo** dan **Tailwind CSS**.
+Blog pribadi modern yang dibangun dengan **Hugo** dan **Tailwind CSS**, di-deploy menggunakan **Cloudflare Pages**.
 
 ## ✨ Fitur
 
@@ -9,12 +9,43 @@ Blog pribadi modern yang dibangun dengan **Hugo** dan **Tailwind CSS**.
 - **Blog System**: Sistem blog lengkap dengan tag dan kategori
 - **Product Catalog**: Showcase produk digital
 - **SEO Optimized**: Meta tags dan structured data
+- **Fast Loading**: Powered by Cloudflare Pages CDN
 
 ## 🚀 Tech Stack
 
-- **Framework**: [Hugo](https://gohugo.io/) - Static site generator
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- **Framework**: [Hugo](https://gohugo.io/) v0.152.2 - Static site generator
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v3.4 - Utility-first CSS
+- **Hosting**: [Cloudflare Pages](https://pages.cloudflare.com/) - Fast & secure hosting
 - **Theme**: Custom theme "budaklembur-theme"
+
+## 🌐 Deploy ke Cloudflare Pages
+
+### Langkah-langkah:
+
+1. **Push ke GitHub**
+   ```bash
+   git add .
+   git commit -m "Deploy to Cloudflare Pages"
+   git push origin main
+   ```
+
+2. **Setup di Cloudflare Pages**
+   - Login ke [Cloudflare Dashboard](https://dash.cloudflare.com)
+   - Pilih "Pages" dari sidebar
+   - Klik "Create a project"
+   - Connect ke GitHub repository ini
+
+3. **Build Settings**
+   - **Framework preset**: Hugo
+   - **Build command**: `hugo --minify`
+   - **Build output directory**: `public`
+   - **Root directory**: `/` (default)
+
+4. **Environment Variables** (opsional)
+   - `HUGO_VERSION`: `0.152.2`
+
+### 🔧 Custom Domain (Opsional)
+Setelah deploy berhasil, Anda bisa menambahkan custom domain di Cloudflare Pages dashboard.
 
 ## 🛠️ Instalasi
 
