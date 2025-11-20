@@ -1,0 +1,52 @@
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Blog Terbaru</h2>
+            <p class="text-gray-600">Artikel dan pemikiran terbaru</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+            <article class="card-blog group">
+                <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                    <img src="{{ if .Params.thumbnail }}{{ .Params.thumbnail | relURL }}{{ else }}/post/no-thumb.jpg{{ end }}" 
+                         alt="{{ .Title }}" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        {{ range .Params.tags }}
+                        <span class="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2">
+                            {{ . }}
+                        </span>
+                        {{ end }}
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        {{ .Params.excerpt | default .Summary }}
+                    </p>
+                    <div class="flex items-center justify-between text-sm text-gray-500">
+                        <span>{{ .Date.Format "2 January 2006" }}</span>
+                        <span>{{ .Params.readingTime | default "5" }} min baca</span>
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        
+        <div class="text-center">
+            <a href="{{ "blog" | relURL }}" 
+               class="group inline-flex items-center bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-2xl font-bold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                <svg class="mr-3 w-5 h-5 group-hover:animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <span>Baca Semua Artikel</span>
+                <svg class="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>

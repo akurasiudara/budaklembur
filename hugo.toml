@@ -1,0 +1,50 @@
+baseURL = 'https://budaklembur.netlify.app'
+languageCode = 'id'
+title = 'Budak Lembur Blog'
+theme = 'budaklembur-theme'
+
+[params]
+  siteName = "Budak Lembur"
+  description = "Blog pribadi seorang freelancer, pengusaha, guru SD, open source enthusiast, desain grafis, dan aktivis sosial"
+  heroImage = "/images/profil.png"
+  
+  # Footer rotating texts
+  footerTexts = [
+    "Dibuat oleh seorang freelancer yang passionate",
+    "Dibuat oleh pengusaha muda yang inovatif", 
+    "Dibuat oleh guru SD yang peduli pendidikan",
+    "Dibuat oleh open source enthusiast",
+    "Dibuat oleh desainer grafis kreatif",
+    "Dibuat oleh aktivis sosial yang berkomitmen"
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 20
+  [[menu.main]]
+    name = "Produk"
+    url = "/produk/"
+    weight = 30
+  [[menu.main]]
+    name = "Tentang"
+    url = "/tentang/"
+    weight = 40
+  [[menu.main]]
+    name = "Kontak"
+    url = "/kontak/"
+    weight = 50
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

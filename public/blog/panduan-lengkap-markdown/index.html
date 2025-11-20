@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Panduan Lengkap Markdown untuk Developer Modern - Budak Lembur Blog</title>
+
+
+<meta name="description" content="Panduan komprehensif untuk menguasai semua elemen Markdown dengan contoh praktis dan tips untuk developer">
+
+
+
+<meta name="keywords" content="markdown, documentation, developer, tutorial">
+
+
+
+<meta name="author" content="Budak Lembur">
+
+
+<link rel="canonical" href="http://localhost:1313/blog/panduan-lengkap-markdown/">
+
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/blog/panduan-lengkap-markdown/">
+<meta property="og:title" content="Panduan Lengkap Markdown untuk Developer Modern">
+<meta property="og:description" content="Panduan komprehensif untuk menguasai semua elemen Markdown dengan contoh praktis dan tips untuk developer">
+<meta property="og:site_name" content="Budak Lembur Blog">
+
+<meta property="og:image" content="http://localhost:1313/post/no-thumb.jpg">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="http://localhost:1313/blog/panduan-lengkap-markdown/">
+<meta name="twitter:title" content="Panduan Lengkap Markdown untuk Developer Modern">
+<meta name="twitter:description" content="Panduan komprehensif untuk menguasai semua elemen Markdown dengan contoh praktis dan tips untuk developer">
+
+<meta name="twitter:image" content="http://localhost:1313/post/no-thumb.jpg">
+
+
+
+
+<meta property="article:published_time" content="2024-11-20T10:00:00Z">
+<meta property="article:modified_time" content="2024-11-20T10:00:00Z">
+
+
+<meta property="article:tag" content="markdown">
+
+<meta property="article:tag" content="documentation">
+
+<meta property="article:tag" content="developer">
+
+<meta property="article:tag" content="tutorial">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+
+
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        50: '#f0fdfa',
+                        100: '#ccfbf1',
+                        200: '#99f6e4',
+                        300: '#5eead4',
+                        400: '#2dd4bf',
+                        500: '#14b8a6',
+                        600: '#0d9488',
+                        700: '#0f766e',
+                        800: '#115e59',
+                        900: '#134e4a'
+                    }
+                },
+                fontFamily: {
+                    sans: ['Inter', 'system-ui', 'sans-serif']
+                }
+            }
+        }
+    }
+</script>
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Panduan Lengkap Markdown untuk Developer Modern",
+  "description": "Panduan komprehensif untuk menguasai semua elemen Markdown dengan contoh praktis dan tips untuk developer",
+  "author": {
+    "@type": "Person",
+    "name": "Budak Lembur"
+  },
+  "datePublished": "2024-11-20T10:00:00Z",
+  "dateModified": "2024-11-20T10:00:00Z",
+  
+  "image": "http:\/\/localhost:1313\/post\/no-thumb.jpg",
+  
+  "url": "http:\/\/localhost:1313\/blog\/panduan-lengkap-markdown\/"
+}
+</script>
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg border-b border-primary-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <div class="flex-shrink-0">
+                <a href="/" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">
+                        Budak Lembur
+                    </span>
+                </a>
+            </div>
+            
+            
+            <div class="hidden md:block">
+                <div class="flex items-center space-x-2">
+                    
+                    <a href="/" 
+                       class="relative px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-primary-600 transition-all duration-300 group ">
+                        <span class="relative z-10">Home</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                    </a>
+                    
+                    <a href="/blog/" 
+                       class="relative px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-primary-600 transition-all duration-300 group ">
+                        <span class="relative z-10">Blog</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                    </a>
+                    
+                    <a href="/produk/" 
+                       class="relative px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-primary-600 transition-all duration-300 group ">
+                        <span class="relative z-10">Produk</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                    </a>
+                    
+                    <a href="/tentang/" 
+                       class="relative px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-primary-600 transition-all duration-300 group ">
+                        <span class="relative z-10">Tentang</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                    </a>
+                    
+                    <a href="/kontak/" 
+                       class="relative px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-primary-600 transition-all duration-300 group ">
+                        <span class="relative z-10">Kontak</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                    </a>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="md:hidden">
+                <button type="button" 
+                        class="mobile-menu-button relative inline-flex items-center justify-center p-3 rounded-xl text-gray-700 hover:text-primary-600 hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300 group"
+                        aria-controls="mobile-menu" 
+                        aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <div class="w-6 h-6 flex flex-col justify-center items-center">
+                        <span class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300 group-hover:w-5"></span>
+                        <span class="bg-current block h-0.5 w-6 rounded-sm mt-1 transition-all duration-300"></span>
+                        <span class="bg-current block h-0.5 w-6 rounded-sm mt-1 transition-all duration-300 group-hover:w-4"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="mobile-menu hidden md:hidden">
+        <div class="px-4 pt-2 pb-4 space-y-2 bg-white/95 backdrop-blur-md border-t border-primary-100">
+            
+            <a href="/" 
+               class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 ">
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full opacity-0 transition-opacity duration-300"></div>
+                    <span>Home</span>
+                </div>
+            </a>
+            
+            <a href="/blog/" 
+               class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 ">
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full opacity-0 transition-opacity duration-300"></div>
+                    <span>Blog</span>
+                </div>
+            </a>
+            
+            <a href="/produk/" 
+               class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 ">
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full opacity-0 transition-opacity duration-300"></div>
+                    <span>Produk</span>
+                </div>
+            </a>
+            
+            <a href="/tentang/" 
+               class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 ">
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full opacity-0 transition-opacity duration-300"></div>
+                    <span>Tentang</span>
+                </div>
+            </a>
+            
+            <a href="/kontak/" 
+               class="block px-4 py-3 rounded-xl text-base font-semibold text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 ">
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-primary-500 rounded-full opacity-0 transition-opacity duration-300"></div>
+                    <span>Kontak</span>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        
+<article class="bg-white">
+    
+    <div class="bg-gray-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            
+<nav class="mb-8" aria-label="Breadcrumb">
+    <ol class="flex items-center space-x-2 text-sm text-gray-500">
+        <li>
+            <a href="/" class="hover:text-primary-600 transition-colors">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                <span class="sr-only">Home</span>
+            </a>
+        </li>
+        
+        
+        <li class="flex items-center">
+            <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <a href="/blog" class="ml-2 hover:text-primary-600 transition-colors capitalize">
+                blog
+            </a>
+        </li>
+        
+        
+        
+        <li class="flex items-center">
+            <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="ml-2 text-gray-900 font-medium">Panduan Lengkap Markdown untuk Developer Modern</span>
+        </li>
+        
+    </ol>
+</nav>
+
+            
+            
+            <header class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    
+                    <span class="inline-block bg-primary-100 text-primary-800 text-sm px-3 py-1 rounded-full mr-2">
+                        markdown
+                    </span>
+                    
+                    <span class="inline-block bg-primary-100 text-primary-800 text-sm px-3 py-1 rounded-full mr-2">
+                        documentation
+                    </span>
+                    
+                    <span class="inline-block bg-primary-100 text-primary-800 text-sm px-3 py-1 rounded-full mr-2">
+                        developer
+                    </span>
+                    
+                    <span class="inline-block bg-primary-100 text-primary-800 text-sm px-3 py-1 rounded-full mr-2">
+                        tutorial
+                    </span>
+                    
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Panduan Lengkap Markdown untuk Developer Modern</h1>
+                <div class="flex items-center justify-center space-x-6 text-gray-600">
+                    <span>20 November 2024</span>
+                    <span>•</span>
+                    <span>12 menit baca</span>
+                </div>
+            </header>
+        </div>
+    </div>
+    
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-8">
+        <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
+            <img src="/post/no-thumb.jpg" 
+                 alt="Panduan Lengkap Markdown untuk Developer Modern" 
+                 class="w-full h-96 object-cover">
+        </div>
+    </div>
+    
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="prose prose-lg max-w-none">
+            <h1 id="panduan-lengkap-markdown-untuk-developer-modern">Panduan Lengkap Markdown untuk Developer Modern</h1>
+<p>Markdown telah menjadi standar de facto untuk dokumentasi dalam dunia pengembangan software. Dari README di GitHub hingga dokumentasi API, Markdown memungkinkan kita menulis dengan format yang clean dan readable.</p>
+<h2 id="mengapa-markdown-penting">Mengapa Markdown Penting?</h2>
+<blockquote>
+<p>&ldquo;Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats.&rdquo; - John Gruber</p>
+</blockquote>
+<p>Dalam era digital ini, kemampuan menulis dokumentasi yang baik sama pentingnya dengan kemampuan coding. Markdown memberikan kita tools yang sempurna untuk ini.</p>
+<h2 id="-heading-dan-struktur">📝 Heading dan Struktur</h2>
+<p>Markdown mendukung 6 level heading yang membantu mengorganisir konten:</p>
+<h3 id="level-3-sub-section">Level 3: Sub-section</h3>
+<h4 id="level-4-detail-section">Level 4: Detail Section</h4>
+<h5 id="level-5-minor-detail">Level 5: Minor Detail</h5>
+<h6 id="level-6-fine-detail">Level 6: Fine Detail</h6>
+<h2 id="-text-formatting">🎨 Text Formatting</h2>
+<p>Markdown menyediakan berbagai cara untuk memformat teks:</p>
+<ul>
+<li><strong>Bold text</strong> menggunakan <code>**text**</code> atau <code>__text__</code></li>
+<li><em>Italic text</em> menggunakan <code>*text*</code> atau <code>_text_</code></li>
+<li><em><strong>Bold dan italic</strong></em> menggunakan <code>***text***</code></li>
+<li><del>Strikethrough</del> menggunakan <code>~~text~~</code></li>
+<li><code>Inline code</code> menggunakan backticks</li>
+<li><a href="https://example.com">Link text</a> menggunakan <code>[text](url)</code></li>
+</ul>
+<h2 id="-lists-dan-struktur-data">📋 Lists dan Struktur Data</h2>
+<h3 id="unordered-lists">Unordered Lists</h3>
+<ul>
+<li>Item pertama</li>
+<li>Item kedua
+<ul>
+<li>Sub-item 2.1</li>
+<li>Sub-item 2.2
+<ul>
+<li>Sub-sub-item 2.2.1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Item ketiga</li>
+</ul>
+<h3 id="ordered-lists">Ordered Lists</h3>
+<ol>
+<li>Langkah pertama</li>
+<li>Langkah kedua
+<ol>
+<li>Sub-langkah 2.1</li>
+<li>Sub-langkah 2.2</li>
+</ol>
+</li>
+<li>Langkah ketiga</li>
+</ol>
+<h3 id="task-lists">Task Lists</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Task yang sudah selesai</li>
+<li><input checked="" disabled="" type="checkbox"> Task lain yang selesai</li>
+<li><input disabled="" type="checkbox"> Task yang belum selesai</li>
+<li><input disabled="" type="checkbox"> Task untuk masa depan</li>
+</ul>
+<h2 id="-code-blocks-dan-syntax-highlighting">💻 Code Blocks dan Syntax Highlighting</h2>
+<h3 id="inline-code">Inline Code</h3>
+<p>Gunakan <code>console.log()</code> untuk debugging atau <code>npm install</code> untuk instalasi package.</p>
+<h3 id="code-blocks">Code Blocks</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Contoh JavaScript modern dengan ES6+
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fetchUserData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">userId</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">`/api/users/</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">userId</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">userData</span>.<span style="color:#a6e22e">id</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">userData</span>.<span style="color:#a6e22e">name</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">userData</span>.<span style="color:#a6e22e">email</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">createdAt</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#a6e22e">userData</span>.<span style="color:#a6e22e">created_at</span>)
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error fetching user data:&#39;</span>, <span style="color:#a6e22e">error</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Failed to fetch user data&#39;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Usage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fetchUserData</span>(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">user</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;User:&#39;</span>, <span style="color:#a6e22e">user</span>))
+</span></span><span style="display:flex;"><span>  .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">err</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error:&#39;</span>, <span style="color:#a6e22e">err</span>));
+</span></span></code></pre></div><h3 id="python-example">Python Example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Contoh Python dengan type hints dan modern practices</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List, Optional, Dict
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> asyncio
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> aiohttp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserService</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, base_url: str):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>base_url <span style="color:#f92672">=</span> base_url
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_user</span>(self, user_id: int) <span style="color:#f92672">-&gt;</span> Optional[Dict]:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;Fetch user data from API&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">with</span> aiohttp<span style="color:#f92672">.</span>ClientSession() <span style="color:#66d9ef">as</span> session:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">with</span> session<span style="color:#f92672">.</span>get(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>base_url<span style="color:#e6db74">}</span><span style="color:#e6db74">/users/</span><span style="color:#e6db74">{</span>user_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#66d9ef">as</span> response:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> response<span style="color:#f92672">.</span>status <span style="color:#f92672">==</span> <span style="color:#ae81ff">200</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">await</span> response<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Usage</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    service <span style="color:#f92672">=</span> UserService(<span style="color:#e6db74">&#34;https://api.example.com&#34;</span>)
+</span></span><span style="display:flex;"><span>    user <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> service<span style="color:#f92672">.</span>get_user(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> user:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;User: </span><span style="color:#e6db74">{</span>user[<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    asyncio<span style="color:#f92672">.</span>run(main())
+</span></span></code></pre></div><h3 id="shell-commands">Shell Commands</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Setup project baru</span>
+</span></span><span style="display:flex;"><span>mkdir my-awesome-project
+</span></span><span style="display:flex;"><span>cd my-awesome-project
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize git dan npm</span>
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>npm init -y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install dependencies</span>
+</span></span><span style="display:flex;"><span>npm install express mongoose dotenv
+</span></span><span style="display:flex;"><span>npm install -D nodemon jest supertest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Setup scripts</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;console.log(&#39;Hello World!&#39;);&#34;</span> &gt; index.js
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run project</span>
+</span></span><span style="display:flex;"><span>npm start
+</span></span></code></pre></div><h2 id="-tables">📊 Tables</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Markdown</th>
+          <th>HTML</th>
+          <th>LaTeX</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ease of Use</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐</td>
+          <td>⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Flexibility</strong></td>
+          <td>⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Learning Curve</strong></td>
+          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
+          <td>⭐</td>
+      </tr>
+      <tr>
+          <td><strong>Output Quality</strong></td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="comparison-table">Comparison Table</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Framework</th>
+          <th>Language</th>
+          <th>Performance</th>
+          <th>Learning Curve</th>
+          <th>Community</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>React</td>
+          <td>JavaScript</td>
+          <td>⚡⚡⚡⚡</td>
+          <td>Medium</td>
+          <td>Huge</td>
+      </tr>
+      <tr>
+          <td>Vue.js</td>
+          <td>JavaScript</td>
+          <td>⚡⚡⚡⚡⚡</td>
+          <td>Easy</td>
+          <td>Large</td>
+      </tr>
+      <tr>
+          <td>Angular</td>
+          <td>TypeScript</td>
+          <td>⚡⚡⚡</td>
+          <td>Hard</td>
+          <td>Large</td>
+      </tr>
+      <tr>
+          <td>Svelte</td>
+          <td>JavaScript</td>
+          <td>⚡⚡⚡⚡⚡</td>
+          <td>Medium</td>
+          <td>Growing</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="-links-dan-references">🔗 Links dan References</h2>
+<h3 id="external-links">External Links</h3>
+<ul>
+<li><a href="https://github.com">GitHub</a> - Platform untuk version control</li>
+<li><a href="https://stackoverflow.com">Stack Overflow</a> - Q&amp;A untuk developer</li>
+<li><a href="https://developer.mozilla.org">MDN Web Docs</a> - Dokumentasi web terlengkap</li>
+</ul>
+<h3 id="internal-links">Internal Links</h3>
+<p>Anda bisa membuat link ke <a href="/tentang">halaman tentang</a> atau <a href="/kontak">halaman kontak</a> dalam website ini.</p>
+<h3 id="reference-links">Reference Links</h3>
+<p>Ini adalah contoh <a href="https://example.com" title="Contoh website">reference link</a> dan ini <a href="https://github.com" title="GitHub">link lainnya</a>.</p>
+<h2 id="-images-dan-media">🖼️ Images dan Media</h2>
+<h3 id="basic-image">Basic Image</h3>
+<p><img src="/post/no-thumb.jpg" alt="Contoh Gambar" title="Deskripsi gambar"></p>
+<h3 id="image-dengan-link">Image dengan Link</h3>
+<p><a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"></a></p>
+<h2 id="-blockquotes">📝 Blockquotes</h2>
+<h3 id="simple-quote">Simple Quote</h3>
+<blockquote>
+<p>&ldquo;Code is like humor. When you have to explain it, it&rsquo;s bad.&rdquo; - Cory House</p>
+</blockquote>
+<h3 id="nested-quotes">Nested Quotes</h3>
+<blockquote>
+<p>&ldquo;The best way to learn programming is by writing programs.&rdquo;</p>
+<blockquote>
+<p>&ldquo;Practice makes perfect, but perfect practice makes permanent.&rdquo;</p>
+<p>— Anonymous Developer</p>
+</blockquote>
+</blockquote>
+<h3 id="multi-paragraph-quote">Multi-paragraph Quote</h3>
+<blockquote>
+<p>Ini adalah paragraf pertama dalam blockquote.</p>
+<p>Ini adalah paragraf kedua. Blockquote bisa berisi multiple paragraf dan bahkan elemen lain seperti:</p>
+<ul>
+<li>Lists</li>
+<li><strong>Bold text</strong></li>
+<li><code>Code snippets</code></li>
+</ul>
+</blockquote>
+<h2 id="-callouts-dan-alerts">⚠️ Callouts dan Alerts</h2>
+<blockquote>
+<p><strong>💡 Pro Tip:</strong> Gunakan consistent naming convention untuk variable dan function names. Ini akan membuat code Anda lebih readable dan maintainable.</p>
+</blockquote>
+<blockquote>
+<p><strong>⚠️ Warning:</strong> Selalu validate user input sebelum processing. Never trust user input!</p>
+</blockquote>
+<blockquote>
+<p><strong>❌ Error:</strong> Jangan gunakan <code>var</code> di JavaScript modern. Gunakan <code>let</code> atau <code>const</code> instead.</p>
+</blockquote>
+<blockquote>
+<p><strong>✅ Success:</strong> Great job! Anda telah berhasil memahami konsep dasar Markdown.</p>
+</blockquote>
+<h2 id="-mathematical-expressions">🔢 Mathematical Expressions</h2>
+<p>Untuk mathematical expressions, kita bisa menggunakan LaTeX syntax:</p>
+<p><strong>Inline math</strong>: E = mc²</p>
+<p><strong>Block math</strong>:</p>
+<blockquote>
+<p>∫₀^∞ e^(-x²) dx = √π/2</p>
+</blockquote>
+<p><strong>Contoh rumus lainnya</strong>:</p>
+<ul>
+<li><strong>Teorema Pythagoras</strong>: a² + b² = c²</li>
+<li><strong>Rumus Kuadrat</strong>: x = (-b ± √(b²-4ac)) / 2a</li>
+<li><strong>Euler&rsquo;s Identity</strong>: e^(iπ) + 1 = 0</li>
+</ul>
+<h2 id="-definition-lists">📋 Definition Lists</h2>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition for term 1</dd>
+<dt>Term 2</dt>
+<dd>Definition for term 2</dd>
+<dd>Another definition for term 2</dd>
+<dt>API</dt>
+<dd>Application Programming Interface - set of protocols and tools for building software applications</dd>
+<dt>REST</dt>
+<dd>Representational State Transfer - architectural style for designing networked applications</dd>
+</dl>
+<h2 id="-advanced-features">🎯 Advanced Features</h2>
+<h3 id="footnotes">Footnotes</h3>
+<p>Ini adalah text dengan footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Dan ini footnote lainnya<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<h3 id="abbreviations">Abbreviations</h3>
+<p>HTML adalah singkatan dari HyperText Markup Language.
+CSS adalah singkatan dari Cascading Style Sheets.</p>
+<p>*[HTML]: HyperText Markup Language
+*[CSS]: Cascading Style Sheets</p>
+<h2 id="-best-practices-untuk-developer">🛠️ Best Practices untuk Developer</h2>
+<h3 id="1-struktur-dokumen">1. Struktur Dokumen</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Project Title
+</span></span><span style="display:flex;"><span>Brief description
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Installation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Step-by-step guide
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Usage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Code examples
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## API Reference
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Detailed documentation
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Contributing
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Guidelines for contributors
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## License
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>License information
+</span></span></code></pre></div><h3 id="2-code-documentation">2. Code Documentation</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Calculate the factorial of a number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @param {number} n - The number to calculate factorial for
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @returns {number} The factorial result
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * @example
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * // Calculate factorial of 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * const result = factorial(5); // Returns 120
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">factorial</span>(<span style="color:#a6e22e">n</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>) <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">factorial</span>(<span style="color:#a6e22e">n</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="3-readme-template">3. README Template</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Project Name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">![Build Status</span>](<span style="color:#a6e22e">https://travis-ci.org/username/project.svg?branch=master</span>)](https://travis-ci.org/username/project)
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">![License: MIT</span>](<span style="color:#a6e22e">https://img.shields.io/badge/License-MIT-yellow.svg</span>)](https://opensource.org/licenses/MIT)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Brief project description.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Features
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Feature 1
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Feature 2
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Feature 3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Quick Start
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>\`\`\`bash
+</span></span><span style="display:flex;"><span>npm install project-name
+</span></span><span style="display:flex;"><span>\`\`\`
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Documentation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Full documentation available at [<span style="color:#f92672">docs.example.com</span>](<span style="color:#a6e22e">https://docs.example.com</span>)
+</span></span></code></pre></div><h2 id="-resources-dan-tools">📚 Resources dan Tools</h2>
+<h3 id="markdown-editors">Markdown Editors</h3>
+<ol>
+<li><strong>Typora</strong> - WYSIWYG markdown editor</li>
+<li><strong>Mark Text</strong> - Real-time preview editor</li>
+<li><strong>Obsidian</strong> - Knowledge management dengan markdown</li>
+<li><strong>Notion</strong> - All-in-one workspace dengan markdown support</li>
+</ol>
+<h3 id="online-tools">Online Tools</h3>
+<ul>
+<li><a href="https://www.markdownguide.org/">Markdown Guide</a> - Comprehensive guide</li>
+<li><a href="https://dillinger.io/">Dillinger</a> - Online markdown editor</li>
+<li><a href="https://stackedit.io/">StackEdit</a> - In-browser markdown editor</li>
+</ul>
+<h3 id="extensions">Extensions</h3>
+<ul>
+<li><strong>Markdown All in One</strong> (VS Code)</li>
+<li><strong>Markdown Preview Enhanced</strong> (VS Code)</li>
+<li><strong>Markdown TOC</strong> (VS Code)</li>
+</ul>
+<h2 id="-kesimpulan">🎉 Kesimpulan</h2>
+<p>Markdown adalah tool yang powerful dan essential untuk setiap developer. Dengan menguasai semua elemen yang telah kita bahas, Anda akan bisa:</p>
+<ol>
+<li>✅ Menulis dokumentasi yang professional</li>
+<li>✅ Membuat README yang menarik dan informatif</li>
+<li>✅ Berkomunikasi dengan tim secara efektif</li>
+<li>✅ Membuat blog posts dan articles yang engaging</li>
+</ol>
+<h3 id="next-steps">Next Steps</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Practice menulis dengan semua elemen markdown</li>
+<li><input disabled="" type="checkbox"> Setup markdown editor favorit Anda</li>
+<li><input disabled="" type="checkbox"> Mulai dokumentasikan project Anda dengan markdown</li>
+<li><input disabled="" type="checkbox"> Explore advanced features seperti MDX untuk React</li>
+</ul>
+<hr>
+<p><strong>Happy coding!</strong> 🚀</p>
+<p><em>Artikel ini ditulis dengan ❤️ untuk developer community. Jika ada pertanyaan atau saran, jangan ragu untuk <a href="/kontak">menghubungi kami</a>.</em></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Ini adalah isi footnote pertama.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Ini adalah isi footnote kedua dengan <a href="https://example.com">link</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        </div>
+        
+        
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-600">Tags:</span>
+                    
+                    <a href="/tags/markdown" 
+                       class="inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-primary-100 hover:text-primary-800 transition-colors">
+                        markdown
+                    </a>
+                    
+                    <a href="/tags/documentation" 
+                       class="inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-primary-100 hover:text-primary-800 transition-colors">
+                        documentation
+                    </a>
+                    
+                    <a href="/tags/developer" 
+                       class="inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-primary-100 hover:text-primary-800 transition-colors">
+                        developer
+                    </a>
+                    
+                    <a href="/tags/tutorial" 
+                       class="inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-primary-100 hover:text-primary-800 transition-colors">
+                        tutorial
+                    </a>
+                    
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-600">Share:</span>
+                    <a href="https://twitter.com/intent/tweet?text=Panduan%20Lengkap%20Markdown%20untuk%20Developer%20Modern&url=http%3a%2f%2flocalhost%3a1313%2fblog%2fpanduan-lengkap-markdown%2f" 
+                       target="_blank" 
+                       class="text-gray-400 hover:text-blue-500 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2fpanduan-lengkap-markdown%2f" 
+                       target="_blank" 
+                       class="text-gray-400 hover:text-blue-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</article>
+
+    </main>
+    
+    <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Budak Lembur</h3>
+                <p class="text-gray-300 mb-4">Blog pribadi seorang freelancer, pengusaha, guru SD, open source enthusiast, desain grafis, dan aktivis sosial</p>
+            </div>
+            
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    
+                    <li>
+                        <a href="/" class="text-gray-300 hover:text-white transition-colors">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/blog/" class="text-gray-300 hover:text-white transition-colors">
+                            Blog
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/produk/" class="text-gray-300 hover:text-white transition-colors">
+                            Produk
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tentang/" class="text-gray-300 hover:text-white transition-colors">
+                            Tentang
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/kontak/" class="text-gray-300 hover:text-white transition-colors">
+                            Kontak
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                <div class="space-y-2 text-gray-300">
+                    <p>Email: hello@budaklembur.com</p>
+                    <p>Follow us on social media</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-700">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+                    <p class="text-gray-300 text-sm">
+                        &copy; 2025 Budak Lembur. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-4 text-xs text-gray-400">
+                        <span>Dibuat dengan:</span>
+                        <a href="https://gohugo.io" target="_blank" class="hover:text-primary-400 transition-colors">
+                            Hugo v0.152.2
+                        </a>
+                        <span>•</span>
+                        <a href="https://tailwindcss.com" target="_blank" class="hover:text-primary-400 transition-colors">
+                            Tailwind CSS v3.4
+                        </a>
+                        <span>•</span>
+                        <a href="https://netlify.com" target="_blank" class="hover:text-primary-400 transition-colors">
+                            Netlify
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>

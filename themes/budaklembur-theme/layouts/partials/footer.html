@@ -1,0 +1,58 @@
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">{{ .Site.Params.siteName }}</h3>
+                <p class="text-gray-300 mb-4">{{ .Site.Params.description }}</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    {{ range .Site.Menus.main }}
+                    <li>
+                        <a href="{{ .URL | relURL }}" class="text-gray-300 hover:text-white transition-colors">
+                            {{ .Name }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                <div class="space-y-2 text-gray-300">
+                    <p>Email: hello@budaklembur.com</p>
+                    <p>Follow us on social media</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-700">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+                    <p class="text-gray-300 text-sm">
+                        &copy; {{ now.Format "2006" }} {{ .Site.Params.siteName }}. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-4 text-xs text-gray-400">
+                        <span>Dibuat dengan:</span>
+                        <a href="https://gohugo.io" target="_blank" class="hover:text-primary-400 transition-colors">
+                            Hugo v0.152.2
+                        </a>
+                        <span>•</span>
+                        <a href="https://tailwindcss.com" target="_blank" class="hover:text-primary-400 transition-colors">
+                            Tailwind CSS v3.4
+                        </a>
+                        <span>•</span>
+                        <a href="https://netlify.com" target="_blank" class="hover:text-primary-400 transition-colors">
+                            Netlify
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

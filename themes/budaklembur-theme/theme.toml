@@ -1,0 +1,12 @@
+name = "Budak Lembur Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/budaklembur-theme/blob/main/LICENSE"
+description = "Modern blog theme with Tailwind CSS"
+homepage = "https://github.com/yourname/budaklembur-theme"
+tags = ["blog", "personal", "responsive", "tailwind"]
+features = ["responsive", "blog", "products", "portfolio"]
+min_version = "0.112.0"
+
+[author]
+  name = "Budak Lembur"
+  homepage = "https://budaklembur.netlify.app"

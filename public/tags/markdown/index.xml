@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Budak Lembur Blog</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on Budak Lembur Blog</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Wed, 20 Nov 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Panduan Lengkap Markdown untuk Developer Modern</title>
+      <link>http://localhost:1313/blog/panduan-lengkap-markdown/</link>
+      <pubDate>Wed, 20 Nov 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/panduan-lengkap-markdown/</guid>
+      <description>&lt;h1 id=&#34;panduan-lengkap-markdown-untuk-developer-modern&#34;&gt;Panduan Lengkap Markdown untuk Developer Modern&lt;/h1&gt;&#xA;&lt;p&gt;Markdown telah menjadi standar de facto untuk dokumentasi dalam dunia pengembangan software. Dari README di GitHub hingga dokumentasi API, Markdown memungkinkan kita menulis dengan format yang clean dan readable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mengapa-markdown-penting&#34;&gt;Mengapa Markdown Penting?&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats.&amp;rdquo; - John Gruber&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Dalam era digital ini, kemampuan menulis dokumentasi yang baik sama pentingnya dengan kemampuan coding. Markdown memberikan kita tools yang sempurna untuk ini.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

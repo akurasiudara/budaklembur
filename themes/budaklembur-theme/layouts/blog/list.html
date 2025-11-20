@@ -1,0 +1,60 @@
+{{ define "main" }}
+<div class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Blog</h1>
+            <p class="text-xl text-gray-600">Artikel dan pemikiran terbaru</p>
+        </div>
+        
+        <!-- Blog Posts Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {{ range .Pages }}
+            <article class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group hover:-translate-y-1">
+                <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                    <img src="{{ if .Params.thumbnail }}{{ .Params.thumbnail | relURL }}{{ else }}/post/no-thumb.jpg{{ end }}" 
+                         alt="{{ .Title }}" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        {{ range .Params.tags }}
+                        <span class="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full mr-2">
+                            {{ . }}
+                        </span>
+                        {{ end }}
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        {{ .Params.excerpt | default .Summary }}
+                    </p>
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <span>{{ .Date.Format "2 January 2006" }}</span>
+                        <span>{{ .Params.readingTime | default "5" }} min baca</span>
+                    </div>
+                    <a href="{{ .Permalink }}" 
+                       class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                        Baca Selengkapnya
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        
+        {{ if eq (len .Pages) 0 }}
+        <div class="text-center py-12">
+            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+            </svg>
+            <h3 class="mt-2 text-sm font-medium text-gray-900">Belum ada artikel</h3>
+            <p class="mt-1 text-sm text-gray-500">Artikel blog akan segera hadir.</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

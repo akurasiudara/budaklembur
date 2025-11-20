@@ -1,0 +1,22 @@
+# Folder untuk menyimpan gambar
+# Letakkan gambar Anda di sini:
+
+## Gambar yang diperlukan:
+- profil.png (foto profil untuk hero section)
+- blog-1.jpg (thumbnail blog post 1)
+- blog-2.jpg (thumbnail blog post 2) 
+- blog-3.jpg (thumbnail blog post 3)
+- product-1.jpg (gambar produk 1)
+- product-2.jpg (gambar produk 2)
+- product-3.jpg (gambar produk 3)
+- product-4.jpg (gambar produk 4)
+
+## Cara menggunakan:
+1. Copy gambar ke folder static/images/
+2. Reference di markdown: /images/nama-file.jpg
+3. Hugo akan otomatis serve dari /images/
+
+## Format yang disarankan:
+- Format: JPG, PNG, WebP
+- Ukuran: Max 1MB per file
+- Resolusi: 800x600px untuk produk, 400x300px untuk blog
