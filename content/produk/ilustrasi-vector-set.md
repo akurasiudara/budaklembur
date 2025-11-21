@@ -1,83 +1,35 @@
 ---
-title: "Ilustrasi Vector Set"
+title: "Gantungan Kunci Akrilik Custom"
 date: 2024-11-01T00:00:00Z
 draft: false
-price: 100000
-image: "/images/product-4.jpg"
-images: ["/images/product-4.jpg", "/images/product-4-2.jpg", "/images/product-4-3.jpg"]
-description: "Set ilustrasi vector berkualitas tinggi"
+price: 5000
+image: "/produk/Gantungan-kunci.png"
+images: ["/produk/Gantungan-kunci.png", "/produk/ganci2.png", "/produk/Ganci3.jpg"]
+description: "Gantungan kunci kustom dari akrilik"
 features:
-  - "50+ ilustrasi vector"
-  - "Multiple styles"
-  - "Editable & scalable"
-  - "AI & SVG format"
-  - "Commercial license"
-  - "Regular updates"
+  - "Bahan akrilik"
+  - "MCetak Bolak balik 2 sisi, bebas request foto"
+  - "Gantungan Besi kualitas super"
+  - "Desain menarik"
 specs:
-  "Illustrations": "50+ unique designs"
-  "Styles": "Flat, Line, Isometric"
-  "Format": "AI, SVG, PNG"
-  "Resolution": "Vector (scalable)"
-  "License": "Commercial Use"
 ---
 
-Koleksi ilustrasi vector berkualitas tinggi yang cocok untuk berbagai keperluan desain. Dari website hingga presentasi, ilustrasi ini akan membuat konten Anda lebih menarik dan profesional.
+Lagi cari hadiah simple tapi bermanfaat dan penuh makna ? Gantungan Kunci Akrilik custom dari Zeropromosi ini jawabannya!
 
-## Kategori Ilustrasi
+Gantungan ini terbuat dari bahan plastik akrilik berkualitas yang bisa dicustom cetak foto kamu sendiri lho. Cocok banget untuk hadiah sahabat, pasangan, kado ulang tahun, souvenir acara, atau sekadar pelengkap koleksi pribadi kamu yang menggemaskan.
 
-### Business & Finance
-- Team collaboration
-- Business meeting
-- Financial planning
-- Data analysis
-- Success & growth
+### Spesifikasi
+* Bahan akrilik 
+* Cetak Bolak balik 2 sisi, bebas request foto
+* Gantungan Besi kualitas super
+* Desain menarik
 
-### Technology
-- Cloud computing
-- Mobile apps
-- Web development
-- AI & machine learning
-- Cybersecurity
+### Ada beberapa bentuk gantungan
+* Pesegi panjang
+* Kotak
+* Bulat
 
-### Lifestyle
-- Work from home
-- Health & fitness
-- Travel & adventure
-- Education & learning
-- Social media
+> Proses pengerjaan 2-4 hari (tergantung banyaknya pesanan).
 
-### Abstract & Conceptual
-- Innovation concepts
-- Problem solving
-- Creative process
-- Future technology
-- Digital transformation
-
-## Style Variations
-
-### Flat Design
-Ilustrasi dengan style flat modern yang clean dan minimalis.
-
-### Line Art
-Ilustrasi outline yang elegant dan versatile.
-
-### Isometric
-Ilustrasi 3D isometric yang modern dan eye-catching.
-
-## Kegunaan
-
-- **Website** - Hero sections, feature explanations
-- **Presentations** - Slide illustrations
-- **Marketing Materials** - Brochures, flyers
-- **Mobile Apps** - Onboarding, empty states
-- **Social Media** - Posts, stories
-- **Print Design** - Posters, banners
-
-## Format File
-
-- **AI Files** - Fully editable Adobe Illustrator files
-- **SVG** - Web-ready scalable vector graphics
-- **PNG** - High-resolution raster images
-- **EPS** - Universal vector format
-
-Semua ilustrasi dapat diedit warna, ukuran, dan elemen-elemennya sesuai kebutuhan project Anda.
+Ayo custom foto kamu jadi gantungan lucu!
+by #UlyssaProject
