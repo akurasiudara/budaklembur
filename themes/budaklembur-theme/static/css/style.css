@@ -292,6 +292,15 @@
 }
 
 /* Task list styling */
+.prose ul:has(input[type="checkbox"]) {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.prose li:has(input[type="checkbox"]) {
+    list-style-type: none;
+}
+
 .prose input[type="checkbox"] {
     margin-right: 0.5rem;
     transform: scale(1.2);

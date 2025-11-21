@@ -8,19 +8,21 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Product Images -->
                 <div class="p-8">
-                    <div class="aspect-w-1 aspect-h-1 mb-4">
+                    <div class="aspect-square mb-4">
                             <img src="{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}/produk/no-thumb.jpg{{ end }}" 
                              alt="{{ .Title }}" 
-                             class="w-full h-96 object-cover rounded-lg main-product-image">
+                             class="w-full h-full object-contain rounded-lg main-product-image bg-gray-50">
                     </div>
                     
                     <!-- Additional Images -->
                     {{ if .Params.images }}
                     <div class="grid grid-cols-3 gap-2 product-gallery">
                         {{ range .Params.images }}
-                        <img src="{{ . | relURL }}" 
-                             alt="{{ $.Title }}" 
-                             class="w-full h-20 object-cover rounded cursor-pointer hover:opacity-75 transition-opacity">
+                        <div class="aspect-square">
+                            <img src="{{ . | relURL }}" 
+                                 alt="{{ $.Title }}" 
+                                 class="w-full h-full object-contain rounded cursor-pointer hover:opacity-75 transition-opacity bg-gray-50">
+                        </div>
                         {{ end }}
                     </div>
                     {{ end }}
