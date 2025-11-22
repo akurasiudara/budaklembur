@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software on Budak Lembur Blog</title><link>https://budaklembur.pages.dev/tags/software/</link><description>Recent content in Software on Budak Lembur Blog</description><generator>Hugo</generator><language>id</language><lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://budaklembur.pages.dev/tags/software/index.xml" rel="self" type="application/rss+xml"/><item><title>Pentingnya Open Source dalam Pengembangan Software</title><link>https://budaklembur.pages.dev/blog/pentingnya-open-source-pengembangan-software/</link><pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate><guid>https://budaklembur.pages.dev/blog/pentingnya-open-source-pengembangan-software/</guid><description>&lt;p&gt;Open source telah menjadi tulang punggung industri teknologi modern. Dari sistem operasi Linux hingga framework web seperti React dan Vue.js, hampir semua teknologi yang kita gunakan hari ini memiliki fondasi open source yang kuat.&lt;/p&gt;
-&lt;h2 id="mengapa-open-source-begitu-penting"&gt;Mengapa Open Source Begitu Penting?&lt;/h2&gt;
-&lt;h3 id="1-transparansi"&gt;1. Transparansi&lt;/h3&gt;
-&lt;p&gt;Pertama, transparansi. Dengan kode yang terbuka, developer dapat melihat, mempelajari, dan memahami cara kerja suatu software. Ini menciptakan ekosistem pembelajaran yang sangat berharga.&lt;/p&gt;
-&lt;h3 id="2-kolaborasi-global"&gt;2. Kolaborasi Global&lt;/h3&gt;
-&lt;p&gt;Kedua, kolaborasi global. Open source memungkinkan developer dari seluruh dunia untuk berkontribusi pada proyek yang sama, menciptakan inovasi yang tidak mungkin dicapai oleh satu perusahaan saja.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Budak Lembur Blog</title>
+    <link>http://localhost:1313/tags/software/</link>
+    <description>Recent content in Software on Budak Lembur Blog</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pentingnya Open Source dalam Pengembangan Software</title>
+      <link>http://localhost:1313/blog/pentingnya-open-source-pengembangan-software/</link>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/pentingnya-open-source-pengembangan-software/</guid>
+      <description>&lt;p&gt;Open source telah menjadi tulang punggung industri teknologi modern. Dari sistem operasi Linux hingga framework web seperti React dan Vue.js, hampir semua teknologi yang kita gunakan hari ini memiliki fondasi open source yang kuat.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mengapa-open-source-begitu-penting&#34;&gt;Mengapa Open Source Begitu Penting?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-transparansi&#34;&gt;1. Transparansi&lt;/h3&gt;&#xA;&lt;p&gt;Pertama, transparansi. Dengan kode yang terbuka, developer dapat melihat, mempelajari, dan memahami cara kerja suatu software. Ini menciptakan ekosistem pembelajaran yang sangat berharga.&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-kolaborasi-global&#34;&gt;2. Kolaborasi Global&lt;/h3&gt;&#xA;&lt;p&gt;Kedua, kolaborasi global. Open source memungkinkan developer dari seluruh dunia untuk berkontribusi pada proyek yang sama, menciptakan inovasi yang tidak mungkin dicapai oleh satu perusahaan saja.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

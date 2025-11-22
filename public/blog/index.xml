@@ -1,21 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Budak Lembur Blog</title><link>https://budaklembur.pages.dev/blog/</link><description>Recent content in Blog on Budak Lembur Blog</description><generator>Hugo</generator><language>id</language><lastBuildDate>Wed, 20 Nov 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://budaklembur.pages.dev/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Panduan Lengkap Markdown untuk Developer Modern</title><link>https://budaklembur.pages.dev/blog/panduan-lengkap-markdown/</link><pubDate>Wed, 20 Nov 2024 10:00:00 +0000</pubDate><guid>https://budaklembur.pages.dev/blog/panduan-lengkap-markdown/</guid><description>&lt;h1 id="panduan-lengkap-markdown-untuk-developer-modern"&gt;Panduan Lengkap Markdown untuk Developer Modern&lt;/h1&gt;
-&lt;p&gt;Markdown telah menjadi standar de facto untuk dokumentasi dalam dunia pengembangan software. Dari README di GitHub hingga dokumentasi API, Markdown memungkinkan kita menulis dengan format yang clean dan readable.&lt;/p&gt;
-&lt;h2 id="mengapa-markdown-penting"&gt;Mengapa Markdown Penting?&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats.&amp;rdquo; - John Gruber&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Dalam era digital ini, kemampuan menulis dokumentasi yang baik sama pentingnya dengan kemampuan coding. Markdown memberikan kita tools yang sempurna untuk ini.&lt;/p&gt;</description></item><item><title>Memulai Karir sebagai Freelancer di Era Digital</title><link>https://budaklembur.pages.dev/blog/memulai-karir-freelancer-era-digital/</link><pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><guid>https://budaklembur.pages.dev/blog/memulai-karir-freelancer-era-digital/</guid><description>&lt;p&gt;Memulai karir sebagai freelancer di era digital membutuhkan persiapan yang matang dan strategi yang tepat. Dalam artikel ini, kita akan membahas langkah-langkah praktis untuk memulai perjalanan freelancing yang sukses.&lt;/p&gt;
-&lt;h2 id="tentukan-bidang-keahlian"&gt;Tentukan Bidang Keahlian&lt;/h2&gt;
-&lt;p&gt;Pertama, tentukan bidang keahlian yang akan Anda tawarkan. Apakah itu web development, graphic design, content writing, atau digital marketing. Fokus pada satu atau dua bidang terlebih dahulu agar Anda bisa membangun reputasi yang kuat.&lt;/p&gt;
-&lt;h2 id="bangun-portfolio-yang-menarik"&gt;Bangun Portfolio yang Menarik&lt;/h2&gt;
-&lt;p&gt;Kedua, bangun portfolio yang menarik. Portfolio adalah senjata utama freelancer untuk menarik klien. Pastikan portfolio Anda menampilkan karya terbaik dan mencerminkan kualitas kerja yang Anda tawarkan.&lt;/p&gt;</description></item><item><title>Pentingnya Open Source dalam Pengembangan Software</title><link>https://budaklembur.pages.dev/blog/pentingnya-open-source-pengembangan-software/</link><pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate><guid>https://budaklembur.pages.dev/blog/pentingnya-open-source-pengembangan-software/</guid><description>&lt;p&gt;Open source telah menjadi tulang punggung industri teknologi modern. Dari sistem operasi Linux hingga framework web seperti React dan Vue.js, hampir semua teknologi yang kita gunakan hari ini memiliki fondasi open source yang kuat.&lt;/p&gt;
-&lt;h2 id="mengapa-open-source-begitu-penting"&gt;Mengapa Open Source Begitu Penting?&lt;/h2&gt;
-&lt;h3 id="1-transparansi"&gt;1. Transparansi&lt;/h3&gt;
-&lt;p&gt;Pertama, transparansi. Dengan kode yang terbuka, developer dapat melihat, mempelajari, dan memahami cara kerja suatu software. Ini menciptakan ekosistem pembelajaran yang sangat berharga.&lt;/p&gt;
-&lt;h3 id="2-kolaborasi-global"&gt;2. Kolaborasi Global&lt;/h3&gt;
-&lt;p&gt;Kedua, kolaborasi global. Open source memungkinkan developer dari seluruh dunia untuk berkontribusi pada proyek yang sama, menciptakan inovasi yang tidak mungkin dicapai oleh satu perusahaan saja.&lt;/p&gt;</description></item><item><title>Mengajar di Era Digital: Tantangan dan Peluang</title><link>https://budaklembur.pages.dev/blog/mengajar-era-digital-tantangan-peluang/</link><pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate><guid>https://budaklembur.pages.dev/blog/mengajar-era-digital-tantangan-peluang/</guid><description>&lt;p&gt;Era digital telah mengubah lanskap pendidikan secara fundamental. Sebagai seorang guru SD, saya melihat langsung bagaimana teknologi dapat menjadi alat yang sangat powerful untuk meningkatkan kualitas pembelajaran.&lt;/p&gt;
-&lt;h2 id="tantangan-dalam-mengajar-di-era-digital"&gt;Tantangan dalam Mengajar di Era Digital&lt;/h2&gt;
-&lt;h3 id="digital-divide"&gt;Digital Divide&lt;/h3&gt;
-&lt;p&gt;Tantangan utama yang dihadapi adalah digital divide. Tidak semua siswa memiliki akses yang sama terhadap teknologi. Ini menciptakan kesenjangan yang perlu diatasi dengan strategi yang tepat.&lt;/p&gt;
-&lt;h3 id="adaptasi-guru"&gt;Adaptasi Guru&lt;/h3&gt;
-&lt;p&gt;Guru juga perlu beradaptasi dengan teknologi baru. Tidak semua guru familiar dengan tools digital, sehingga perlu pelatihan dan dukungan yang berkelanjutan.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Budak Lembur Blog</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on Budak Lembur Blog</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Wed, 20 Nov 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Panduan Lengkap Markdown untuk Developer Modern</title>
+      <link>http://localhost:1313/blog/panduan-lengkap-markdown/</link>
+      <pubDate>Wed, 20 Nov 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/panduan-lengkap-markdown/</guid>
+      <description>&lt;h1 id=&#34;panduan-lengkap-markdown-untuk-developer-modern&#34;&gt;Panduan Lengkap Markdown untuk Developer Modern&lt;/h1&gt;&#xA;&lt;p&gt;Markdown telah menjadi standar de facto untuk dokumentasi dalam dunia pengembangan software. Dari README di GitHub hingga dokumentasi API, Markdown memungkinkan kita menulis dengan format yang clean dan readable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mengapa-markdown-penting&#34;&gt;Mengapa Markdown Penting?&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats.&amp;rdquo; - John Gruber&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Dalam era digital ini, kemampuan menulis dokumentasi yang baik sama pentingnya dengan kemampuan coding. Markdown memberikan kita tools yang sempurna untuk ini.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memulai Karir sebagai Freelancer di Era Digital</title>
+      <link>http://localhost:1313/blog/memulai-karir-freelancer-era-digital/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/memulai-karir-freelancer-era-digital/</guid>
+      <description>&lt;p&gt;Memulai karir sebagai freelancer di era digital membutuhkan persiapan yang matang dan strategi yang tepat. Dalam artikel ini, kita akan membahas langkah-langkah praktis untuk memulai perjalanan freelancing yang sukses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tentukan-bidang-keahlian&#34;&gt;Tentukan Bidang Keahlian&lt;/h2&gt;&#xA;&lt;p&gt;Pertama, tentukan bidang keahlian yang akan Anda tawarkan. Apakah itu web development, graphic design, content writing, atau digital marketing. Fokus pada satu atau dua bidang terlebih dahulu agar Anda bisa membangun reputasi yang kuat.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bangun-portfolio-yang-menarik&#34;&gt;Bangun Portfolio yang Menarik&lt;/h2&gt;&#xA;&lt;p&gt;Kedua, bangun portfolio yang menarik. Portfolio adalah senjata utama freelancer untuk menarik klien. Pastikan portfolio Anda menampilkan karya terbaik dan mencerminkan kualitas kerja yang Anda tawarkan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pentingnya Open Source dalam Pengembangan Software</title>
+      <link>http://localhost:1313/blog/pentingnya-open-source-pengembangan-software/</link>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/pentingnya-open-source-pengembangan-software/</guid>
+      <description>&lt;p&gt;Open source telah menjadi tulang punggung industri teknologi modern. Dari sistem operasi Linux hingga framework web seperti React dan Vue.js, hampir semua teknologi yang kita gunakan hari ini memiliki fondasi open source yang kuat.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mengapa-open-source-begitu-penting&#34;&gt;Mengapa Open Source Begitu Penting?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-transparansi&#34;&gt;1. Transparansi&lt;/h3&gt;&#xA;&lt;p&gt;Pertama, transparansi. Dengan kode yang terbuka, developer dapat melihat, mempelajari, dan memahami cara kerja suatu software. Ini menciptakan ekosistem pembelajaran yang sangat berharga.&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-kolaborasi-global&#34;&gt;2. Kolaborasi Global&lt;/h3&gt;&#xA;&lt;p&gt;Kedua, kolaborasi global. Open source memungkinkan developer dari seluruh dunia untuk berkontribusi pada proyek yang sama, menciptakan inovasi yang tidak mungkin dicapai oleh satu perusahaan saja.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mengajar di Era Digital: Tantangan dan Peluang</title>
+      <link>http://localhost:1313/blog/mengajar-era-digital-tantangan-peluang/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/mengajar-era-digital-tantangan-peluang/</guid>
+      <description>&lt;p&gt;Era digital telah mengubah lanskap pendidikan secara fundamental. Sebagai seorang guru SD, saya melihat langsung bagaimana teknologi dapat menjadi alat yang sangat powerful untuk meningkatkan kualitas pembelajaran.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tantangan-dalam-mengajar-di-era-digital&#34;&gt;Tantangan dalam Mengajar di Era Digital&lt;/h2&gt;&#xA;&lt;h3 id=&#34;digital-divide&#34;&gt;Digital Divide&lt;/h3&gt;&#xA;&lt;p&gt;Tantangan utama yang dihadapi adalah digital divide. Tidak semua siswa memiliki akses yang sama terhadap teknologi. Ini menciptakan kesenjangan yang perlu diatasi dengan strategi yang tepat.&lt;/p&gt;&#xA;&lt;h3 id=&#34;adaptasi-guru&#34;&gt;Adaptasi Guru&lt;/h3&gt;&#xA;&lt;p&gt;Guru juga perlu beradaptasi dengan teknologi baru. Tidak semua guru familiar dengan tools digital, sehingga perlu pelatihan dan dukungan yang berkelanjutan.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

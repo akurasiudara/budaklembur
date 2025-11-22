@@ -5,10 +5,10 @@ draft: false
 price: 5000
 image: "/produk/Gantungan-kunci.png"
 images: ["/produk/Gantungan-kunci.png", "/produk/ganci2.png", "/produk/Ganci3.jpg"]
-description: "Gantungan kunci kustom dari akrilik"
+description: "Cetak foto polaroid bebas, dapat 9 foto"
 features:
   - "Bahan akrilik"
-  - "MCetak Bolak balik 2 sisi, bebas request foto"
+  - "Cetak Bolak balik 2 sisi, bebas request foto"
   - "Gantungan Besi kualitas super"
   - "Desain menarik"
 specs:
