@@ -1,7 +1,21 @@
 {{ define "main" }}
 <!-- Hero Section -->
-<section class="bg-gradient-to-br from-primary-50 to-teal-50 py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="bg-gradient-to-br from-primary-50 to-teal-50 py-20 relative overflow-hidden">
+    <!-- Animated Bubbles Background -->
+    <div class="bubbles-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center">
             <div class="mb-8">
                 <img src="{{ .Site.Params.heroImage | relURL }}" 
