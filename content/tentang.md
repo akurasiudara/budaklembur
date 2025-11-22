@@ -5,7 +5,7 @@ description: "Profil lengkap dengan timeline karir dan keahlian"
 
 # Tentang Budak Lembur
 
-Selamat datang di blog pribadi saya! Saya adalah seorang **multi-passionate individual** yang menjalani berbagai peran dalam hidup - dari freelancer hingga guru SD, dari pengusaha hingga aktivis sosial.
+Selamat datang di blog pribadi saya! Saya adalah seorang **multi-passionate individual** yang menjalani berbagai peran dalam hidup - dari freelancer hingga tenaga kependidikan, dari pengusaha hingga aktivis sosial.
 
 ## Siapa Saya?
 
@@ -17,7 +17,7 @@ Dengan pengalaman 5+ tahun dalam web development dan desain grafis, saya membant
 ### 🏢 Pengusaha Muda
 Menjalankan beberapa usaha kecil di bidang teknologi dan kreatif, selalu mencari peluang untuk berinovasi dan memberikan value.
 
-### 👨‍🏫 Guru SD
+### 👨‍🏫 tenaga kependidikan
 Mengajar di sekolah dasar memberikan perspektif unik tentang pendidikan dan perkembangan anak di era digital.
 
 ### 🌟 Open Source Enthusiast
@@ -37,7 +37,7 @@ Memulai karir sebagai freelance web developer sambil kuliah.
 ### 2020 - Lulus & Full-time Freelancer
 Lulus kuliah dan memutuskan menjadi full-time freelancer.
 
-### 2021 - Menjadi Guru SD
+### 2021 - Menjadi tenaga kependidikan
 Bergabung dengan sekolah dasar sebagai guru kelas, menggabungkan passion teknologi dengan pendidikan.
 
 ### 2022 - Memulai Usaha

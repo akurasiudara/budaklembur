@@ -5,18 +5,8 @@ theme = 'budaklembur-theme'
 
 [params]
   siteName = "Budak Lembur"
-  description = "Blog pribadi seorang freelancer, pengusaha, guru SD, open source enthusiast, desain grafis, dan aktivis sosial"
+  description = "Sarana berbagi informasi dan tempat menyimpan hasil googling saya, mungkin suatu saat akan diperlukan kembali."
   heroImage = "/images/profil.png"
-  
-  # Footer rotating texts
-  footerTexts = [
-    "Dibuat oleh seorang freelancer yang passionate",
-    "Dibuat oleh pengusaha muda yang inovatif", 
-    "Dibuat oleh guru SD yang peduli pendidikan",
-    "Dibuat oleh open source enthusiast",
-    "Dibuat oleh desainer grafis kreatif",
-    "Dibuat oleh aktivis sosial yang berkomitmen"
-  ]
 
 [menu]
   [[menu.main]]
